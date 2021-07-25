@@ -1,0 +1,21 @@
+{
+  "description": "Customize Google search results page.",
+  "manifest_version": 2,
+  "name": "Hide It!",
+  "version": "1.0",
+  "icons": {
+    "64": "icons/hide_64.png"
+  },
+
+  "permissions": ["<all_urls>", "storage"],
+
+  "browser_action": {
+    "default_icon": "icons/hide_32.png",
+    "default_title": "Hide It!",
+    "default_popup": "popup/index.html"
+  },
+
+  "background": {
+    "scripts": ["background/peopleAlsoAsk.js"]
+  }
+}
